@@ -33,5 +33,6 @@ deployment:
         python -V
         python -c 'import sys; print sys.maxunicode'
 
+        pip install lamvery -t .
         pip install paramiko -t .
         lamvery deploy
