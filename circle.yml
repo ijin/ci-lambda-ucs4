@@ -4,6 +4,7 @@ machine:
 
 dependencies:
   pre:
+    - pip install lamvery
     - python -c 'import sys; print sys.maxunicode'
 test:
   override:
