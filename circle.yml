@@ -1,0 +1,17 @@
+machine:
+  python:
+    version: 2.7.10
+
+dependencies:
+  pre:
+    - python -c 'import sys; print sys.maxunicode'
+test:
+  override:
+    - echo 'test'
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - |
+        lamvery deploy
