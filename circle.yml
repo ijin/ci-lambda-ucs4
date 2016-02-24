@@ -15,4 +15,5 @@ deployment:
     branch: master
     commands:
       - |
+        pip install paramiko -t .
         lamvery deploy
